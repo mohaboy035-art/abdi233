@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example two lay out</title>
+    <style>
+        /* Khadkan wuxuu xallinayaa in wax kasta ay sanduuqa dhexdiisa ku haraan */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #ffffff;
+        }
+
+        /* Weelka weyn ee dibadda (Cagaarka) */
+        .main-container {
+            border: 5px solid green;
+            padding: 12px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Qaybta Header-ka */
+        .header {
+            background-color: #b2d7f5;
+            border: 3px solid #f4d03f;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        /* Qaybta Dhexda ee saddexda tiir leh */
+        .content-area {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        /* Tiirka 1aad: Links-ka */
+        .nav-sidebar {
+            border: 1px solid #000000;
+            flex: 0 0 15%; /* 15% oo go'an */
+            padding: 8px;
+            min-height: 220px;
+        }
+        .nav-sidebar a {
+            color: blue;
+            text-decoration: underline;
+            margin-right: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        /* Tiirka 2aad: Qoraalka iyo Calanka */
+        .main-content {
+            border: 2px solid darkblue;
+            flex: 0 0 45%; /* 45% oo go'an */
+            padding: 8px;
+            min-height: 220px;
+        }
+        .flag-box {
+            width: 110px;
+            height: 75px;
+            background-color: #4a90e2;
+            float: left;
+            margin-right: 8px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .star {
+            color:blue;
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
+        .text-p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Tiirka 3aad: Shaxda (Table) */
+        .table-container {
+            border: 2px solid #5c2c16;
+            flex: 0 0 37%; /* Lagu xaddiday 37% si uusan cagaarka uga bixin */
+            padding: 4px;
+            background-color:black
+            overflow-x auto; /* Haddii shaashadu aad u yar tahay wuu dhumanayaa intii uu daxasmi lahaa */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #7f7f7f;
+            padding: 4px;
+            font-size: 11px;
+            text-align: left;
+            word-break: break-word; /* Qoraalka dheer wuu thubayaa */
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        td:nth-child(1), td:nth-child(2) {
+            text-align: center;
+        }
+
+        /* Qaybta Hoose (Footer) */
+        .footer {
+            border: 3px solid #f4b042;
+            background-color: #fffdf9;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="header">
+            <h1>Home work</h1>
+        </div>
+
+        <div class="content-area">
+            
+            <div class="nav-sidebar">
+                <a href="#">Home</a> <a href="#">About</a>
+            </div>
+
+            <div class="main-content">
+                <div class="flag-box">
+                    <span class="star">★</span>
+                </div>
+                <p class="text-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit blanditiis sequi ipsa ad amet. Est eligendi libero cupiditate voluptatem numquam laboriosam praesentium nihil, quis voluptas dolorem earum, amet tempora.
+                </p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ST ID</th>
+                            <th>ST Tel</th>
+                            <th>ST Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>612761111</td>
+                            <td>Abdiqafar Osman Abdirahman</td>
+                        </tr>
+                        <tr>
+                            <td>992</td>
+                            <td>6187222</td>
+                            <td>xasna nuur liipan</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>62782222</td>
+                            <td>ahmed maxamed ali</td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>6890000</td>
+                            <td>CALI  harun CABDaE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            &copy; ahmed updi rahamn
+        </div>
+
+    </div>
+
+</body>
+</html>
